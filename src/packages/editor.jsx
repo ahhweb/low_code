@@ -26,6 +26,7 @@ export default defineComponent({
     },
     emits: ['update:modelValue'],
     setup(props, ctx) {
+        console.log(111)
         // 设置计算属性，以便于实现数据的双向绑定
         const data = computed({
             get() {

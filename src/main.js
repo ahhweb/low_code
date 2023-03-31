@@ -3,7 +3,9 @@ import App from './App.vue'
 import 'element-plus/theme-chalk/index.css'
 import 'scene-ui/style'
 import ElementPlus from 'element-plus'
-// import 'default-passive-events'
+import router from './router'
 
-createApp(App).use(ElementPlus)
-createApp(App).mount('#app')
+const app = createApp(App)
+app.use(ElementPlus)
+app.use(router)
+app.mount('#app')
